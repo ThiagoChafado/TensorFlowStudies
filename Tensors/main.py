@@ -2,6 +2,7 @@ import os
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 import tensorflow as tf
 physical_devices = tf.config.list_physical_devices('GPU')
+print(physical_devices)
 #tf.config.experimental.set_memory_growth(physical_devices[0],True)
 #Initialiazation of Tensors
 x = tf.constant(4,shape=(1,1))
